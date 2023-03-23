@@ -1,0 +1,82 @@
+# GET http://localhost:3000/tags
+# # #
+POST http://localhost:3000/users/login
+Content-Type: application/json
+{
+        "user": {
+                "username": "rinus1",
+                "email": "rinusaa@1faoom.com",
+                "password": "12345"
+        }
+}
+
+# GET http://localhost:3000/user
+# Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjcsInVzZXJuYW1lIjoiZm9hYW9hdCIsImVtYWlsIjoicmludXNhYUBmYW9vbS5jb20iLCJpYXQiOjE2NzU5MjkxMzUsImV4cCI6MTY3NTkzMDAzNX0.Fq5ViJMrO4SFqofhXzRLzlfSU2LxRX2MOghtTDIF-UI
+
+# PUT http://localhost:3000/user
+# Content-Type: application/json
+# Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjcsInVzZXJuYW1lIjoiZm9hYW9hdCIsImVtYWlsIjoicmludXNhYUBmYW9vbS5jb20iLCJpYXQiOjE2NzU5MjkxMzUsImV4cCI6MTY3NTkzMDAzNX0.Fq5ViJMrO4SFqofhXzRLzlfSU2LxRX2MOghtTDIF-UI
+# {
+#         "user": {
+#                 "username": "rinus2",
+#                 "bio": "testeron",
+#                 "image": "image.asdjpg",
+#                 "email": "email@email.com"
+#         }
+# }
+
+# POST http://localhost:3000/articles
+# Content-Type: application/json
+# Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjQsInVzZXJuYW1lIjoicmludXMyIiwiZW1haWwiOiJyaW51c2FhQDEyZmFvb20uY29tIiwiaWF0IjoxNjc2NTQ2NDcyLCJleHAiOjE2NzY1NTAwNzJ9.Mv0COEEE4oyG9SAuR257af3w6ahqe0ho2xcr6uFQTcI
+# {
+#   "article": {
+#     "title": "Zdarova banditskyy",
+#     "description": "Ever wonder how to walk?",
+#     "body": "You to believe",
+#     "tagList": ["rust", "bratvaLesnaya", "gwcc"]
+#   }
+# }
+
+# GET http://localhost:3000/articles/all-articles
+# Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjgsInVzZXJuYW1lIjoiZm9hYW9hdCIsImVtYWlsIjoicmludXNhYUBmYW9vbS5jb20iLCJpYXQiOjE2NzYwMTk2MTksImV4cCI6MTY3NjAyMDUxOX0.R8Ox5D0PDQ3v_PpksmlCqgBeV2QFkKhS8FjG7RuFifo
+
+# GET http://localhost:3000/articles/how-to-train-your-dragon-oyxuv6
+# Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjgsInVzZXJuYW1lIjoiZm9hYW9hdCIsImVtYWlsIjoicmludXNhYUBmYW9vbS5jb20iLCJpYXQiOjE2NzYwMTk2MTksImV4cCI6MTY3NjAyMDUxOX0.R8Ox5D0PDQ3v_PpksmlCqgBeV2QFkKhS8FjG7RuFifo
+
+
+# DELETE http://localhost:3000/articles/how-to-train-your-dragon-oyxuv6
+# Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjgsInVzZXJuYW1lIjoiZm9hYW9hdCIsImVtYWlsIjoicmludXNhYUBmYW9vbS5jb20iLCJpYXQiOjE2NzYwMjA2NDksImV4cCI6MTY3NjAyMTU0OX0.N09fuEXIUQMS0vpN7MVFQITbW0Lk6QxOPVuVRDHG6HA
+
+# PUT http://localhost:3000/articles/test-epiehv
+# Content-Type: application/json
+# Authorization:  Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjgsInVzZXJuYW1lIjoiZm9hYW9hdCIsImVtYWlsIjoicmludXNhYUBmYW9vbS5jb20iLCJpYXQiOjE2NzYwMjMxMzIsImV4cCI6MTY3NjAyNjczMn0.Yn8Wu3BPyog_0eGQBfvV1hG_OyobF4iuitUMo0U-Dcc
+# {
+#   "article": {
+#     "title": "1",
+#     "body": "tsetasdaqwa"
+#   }
+# }
+
+# GET http://localhost:3000/articles/?author=foaaoat
+# Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjgsInVzZXJuYW1lIjoiZm9hYW9hdCIsImVtYWlsIjoicmludXNhYUBmYW9vbS5jb20iLCJpYXQiOjE2NzY0NjAyNTMsImV4cCI6MTY3NjQ2Mzg1M30.6HbWybl8GSVCUVDd4bI7bVT-h4dzJ8fV6EAxDF2ww0w
+
+# POST http://localhost:3000/articles/zdarova-bandity-3mckrz/favorite
+# Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjgsInVzZXJuYW1lIjoiZm9hYW9hdCIsImVtYWlsIjoicmludXNhYUBmYW9vbS5jb20iLCJpYXQiOjE2NzYzNjk2NDcsImV4cCI6MTY3NjM3MzI0N30.0klgnQTwRLU6w2YFb0roE5OEnxSojjuzpdCrChWYNRg
+
+
+# DELETE http://localhost:3000/articles/zdarova-bandity-rr8z42/favorite
+# Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjgsInVzZXJuYW1lIjoiZm9hYW9hdCIsImVtYWlsIjoicmludXNhYUBmYW9vbS5jb20iLCJpYXQiOjE2NzYzMDE2NzYsImV4cCI6MTY3NjMwNTI3Nn0.G4qooZ3ikuZaLBkmbs8xWqfZlLS-6dp4jdACt5IeG4Q
+
+# GET http://localhost:3000/articles/zdarova-bandity-rr8z42
+# Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjgsInVzZXJuYW1lIjoiZm9hYW9hdCIsImVtYWlsIjoicmludXNhYUBmYW9vbS5jb20iLCJpYXQiOjE2NzYzNzk0NzAsImV4cCI6MTY3NjM4MzA3MH0.ZsX6oSxbqh06YpEQQw3oZfC4zfxHnCGXGS-pxsliHB4
+
+# GET http://localhost:3000/profile/rinus
+# Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjMsInVzZXJuYW1lIjoicmludXMxIiwiZW1haWwiOiJyaW51c2FhQDFmYW9vbS5jb20iLCJpYXQiOjE2NzY1NDMwMzAsImV4cCI6MTY3NjU0NjYzMH0.2AAsz50vgUp15ts0nIKtMzg_qAyfTzB1GHITZWdmf7I
+
+# POST http://localhost:3000/profile/foo/follow
+# Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjMsInVzZXJuYW1lIjoicmludXMxIiwiZW1haWwiOiJyaW51c2FhQDFmYW9vbS5jb20iLCJpYXQiOjE2NzY1NDY2OTUsImV4cCI6MTY3NjU1MDI5NX0.7aAugrN3lUB8Jc8dfj9Aud064EigscIA_SdNFhz2OVA
+# DELETE http://localhost:3000/profile/foo/follow
+# Authorization: Bearer  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjMsInVzZXJuYW1lIjoicmludXMxIiwiZW1haWwiOiJyaW51c2FhQDFmYW9vbS5jb20iLCJpYXQiOjE2NzY1NDY2OTUsImV4cCI6MTY3NjU1MDI5NX0.7aAugrN3lUB8Jc8dfj9Aud064EigscIA_SdNFhz2OVA
+
+# GET http://localhost:3000/articles/feed
+# Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjMsInVzZXJuYW1lIjoicmludXMxIiwiZW1haWwiOiJyaW51c2FhQDFmYW9vbS5jb20iLCJpYXQiOjE2NzY1NDY2OTUsImV4cCI6MTY3NjU1MDI5NX0.7aAugrN3lUB8Jc8dfj9Aud064EigscIA_SdNFhz2OVA

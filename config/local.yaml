@@ -1,0 +1,11 @@
+postgres:
+  host: 'localhost'
+  port: 5432
+  database: 'medium'
+  username: 'postgres'
+  password: 'postgres'
+  synchronize: false
+
+jwt:
+  secret: 'JWT_SECRET'
+  expiresIn: '60m'
